@@ -9,6 +9,7 @@ import { EmployesListComponent } from './employes-list/employes-list.component';
 import { AjoutEmployeComponent } from './ajout-employe/ajout-employe.component';
 import { Quatre04Component } from './quatre04/quatre04.component';
 import { SelectedEmployeComponent } from './selected-employe/selected-employe.component';
+import { AddEmployeComponent } from './add-employe/add-employe.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SelectedEmployeComponent } from './selected-employe/selected-employe.co
     EmployesListComponent,
     AjoutEmployeComponent,
     Quatre04Component,
-    SelectedEmployeComponent
+    SelectedEmployeComponent,
+    AddEmployeComponent
   ],
   imports: [
     BrowserModule,
