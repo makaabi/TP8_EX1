@@ -10,8 +10,9 @@ import { AjoutEmployeComponent } from './ajout-employe/ajout-employe.component';
 import { Quatre04Component } from './quatre04/quatre04.component';
 import { SelectedEmployeComponent } from './selected-employe/selected-employe.component';
 import { AddEmployeComponent } from './add-employe/add-employe.component';
-import { FindEmployeComponent } from './find-employe/find-employe.component';
-import { DinfEmployeComponent } from './dinf-employe/dinf-employe.component';
+import { ChercherComponent } from './chercher/chercher.component';
+
+
 
 @NgModule({
   declarations: [
@@ -23,8 +24,7 @@ import { DinfEmployeComponent } from './dinf-employe/dinf-employe.component';
     Quatre04Component,
     SelectedEmployeComponent,
     AddEmployeComponent,
-    FindEmployeComponent,
-    DinfEmployeComponent
+    ChercherComponent
   ],
   imports: [
     BrowserModule,
