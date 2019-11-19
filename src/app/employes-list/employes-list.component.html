@@ -3,6 +3,6 @@
     <li *ngFor='let e of employes' class="list-group-item">
         {{e.matricule}}
         {{e.nom}}
-        <button class="btn btn-primary" [routerLink]="[e.matricule]">Infos</button>
+        <button class="btn btn-primary" [routerLink]="['/employes',e.matricule]">Infos</button>
     </li>
 </ul>
