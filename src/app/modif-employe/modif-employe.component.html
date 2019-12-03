@@ -1,0 +1,45 @@
+<div class="col-sm-6 col-sm-offset-2">
+        <h2> Modification d'un employé</h2>
+        <form [formGroup]="modifForm" (ngSubmit)="modif()">
+                <div class="form-group">
+                        <label for="emp">
+                            Sélectionnez un employé:
+                        </label>
+                        <select id="emp" class="form-control"  formControlName="employe" (change)="onChange($event.target.value)" >
+                            <ng-container  *ngFor='let e of employes'> 
+                            <option [value]="e.matricule" >{{e.nom}}</option>
+                            </ng-container>
+                        </select>
+                    </div>
+                    <div class="form-group">
+
+                    <label for="nom">
+                            Nom:
+                        </label>
+                        <input type="text" id="nom" class="form-control" formControlName="nom" />
+                    </div>
+                    <div *ngIf="nomobj.invalid && nomobj.dirty" class="alert alert-danger">
+                        L'nom est invalide
+                        </div>
+                    <div class="form-group">
+                            <label for="emp">
+                                Fonction:
+                            </label>
+                            <select id="emp" class="form-control" formControlName="fonction" >
+                                <option value="Directeur" >Directeur</option>
+                                <option value="Ingénieur" >Ingénieur</option>
+                                <option value="Secrétaire" >Secrétaire</option>
+
+                            </select>
+                        </div>
+                        <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="News" formControlName="expert" >Expert
+                                </label>
+                            </div>
+
+
+                    <br>
+                    <button class="btn btn-primary" type="submit" >Modifier</button>
+                </form>
+</div>

@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,7 @@ import { Quatre04Component } from './quatre04/quatre04.component';
 import { SelectedEmployeComponent } from './selected-employe/selected-employe.component';
 import { AddEmployeComponent } from './add-employe/add-employe.component';
 import { ChercherComponent } from './chercher/chercher.component';
+import { ModifEmployeComponent } from './modif-employe/modif-employe.component';
 
 
 
@@ -24,11 +27,14 @@ import { ChercherComponent } from './chercher/chercher.component';
     Quatre04Component,
     SelectedEmployeComponent,
     AddEmployeComponent,
-    ChercherComponent
+    ChercherComponent,
+    ModifEmployeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

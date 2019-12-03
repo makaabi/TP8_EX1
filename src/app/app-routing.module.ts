@@ -5,6 +5,8 @@ import { EmployesListComponent } from './employes-list/employes-list.component';
 import { SelectedEmployeComponent } from './selected-employe/selected-employe.component';
 import { AjoutEmployeComponent } from './ajout-employe/ajout-employe.component';
 import { Quatre04Component } from './quatre04/quatre04.component';
+import { ModifEmployeComponent } from './modif-employe/modif-employe.component';
+
 
 
 const routes: Routes = [
@@ -12,6 +14,8 @@ const routes: Routes = [
   {path:'employes', component:EmployesListComponent},
   {path:'employes/:matricule', component:SelectedEmployeComponent},
   {path:'ajout', component:AjoutEmployeComponent},
+  {path:'modif', component:ModifEmployeComponent},
+
   {path:'', redirectTo:'presentation', pathMatch:'full'},
   {path:'**', component:Quatre04Component}
 ];

@@ -17,6 +17,16 @@ export class EmployesService {
     this.lesEmployes.push(emp);
   }
 
+  public modifierEmploye(mat:number, nom:string, fct:string, expert:boolean)
+  {
+   let obj:Employe=this.getEmployeByMatricule(mat);
+   obj.nom=nom;
+   obj.fonction=fct;
+   obj.expert=expert;
+
+
+  }
+
   public getEmployeByMatricule(mat:number)
   {
     for(let e of this.lesEmployes)
